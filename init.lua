@@ -979,6 +979,8 @@ require('lazy').setup({
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
   require 'custom.config',
+  require 'custom.plugins.copilot',
+  require 'custom.plugins.undotree',
   require 'kickstart.plugins.debug',
   require 'kickstart.plugins.indent_line',
   require 'kickstart.plugins.lint',
