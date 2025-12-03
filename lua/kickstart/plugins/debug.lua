@@ -9,20 +9,37 @@
 return {
   -- NOTE: Yes, you can install new plugins here!
   'mfussenegger/nvim-dap',
+  commit = '5860c7c',
   -- NOTE: And you can specify dependencies as well
   dependencies = {
     -- Creates a beautiful debugger UI
-    'rcarriga/nvim-dap-ui',
+    {
+      'rcarriga/nvim-dap-ui',
+      commit = 'cf91d5e',
+    },
 
     -- Required dependency for nvim-dap-ui
-    'nvim-neotest/nvim-nio',
+    {
+      'nvim-neotest/nvim-nio',
+      commit = '21f5324',
+    },
 
     -- Installs the debug adapters for you
-    'mason-org/mason.nvim',
-    'jay-babu/mason-nvim-dap.nvim',
+    {
+      'mason-org/mason.nvim',
+      commit = '57e5a8a',
+    },
+
+    {
+      'jay-babu/mason-nvim-dap.nvim',
+      commit = '9a10e09',
+    },
 
     -- Add your own debuggers here
-    'leoluz/nvim-dap-go',
+    {
+      'leoluz/nvim-dap-go',
+      commit = 'b442115',
+    },
   },
   keys = {
     -- Basic debugging keymaps, feel free to change to your liking!

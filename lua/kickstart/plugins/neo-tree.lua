@@ -3,11 +3,21 @@
 
 return {
   'nvim-neo-tree/neo-tree.nvim',
+  commit = 'a981ef2',
   version = '*',
   dependencies = {
-    'nvim-lua/plenary.nvim',
-    'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
-    'MunifTanjim/nui.nvim',
+    {
+      'nvim-lua/plenary.nvim',
+      commit = 'b9fd522',
+    },
+    {
+      'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
+      commit = '8dcb311',
+    },
+    {
+      'MunifTanjim/nui.nvim',
+      commit = 'de74099',
+    },
   },
   lazy = false,
   keys = {
